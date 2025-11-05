@@ -1,0 +1,167 @@
+# **Project Overview**
+
+**CuraLink** is an AI-powered platform designed to connect **patients**, and **researchers** by simplifying the discovery of **clinical trials**, **medical publications**, and **health experts**.
+
+The goal of this hackathon is to build an **MVP (Minimum Viable Product)** that demonstrates this idea through a **clean, simple, and intuitive UI/UX**. The focus should be on delivering a user experience that feels effortless where both patients and researchers can easily find what matters most to them.
+
+---
+
+## 🎯 **What You Need to Do**
+
+**Create an MVP for CuraLink** that includes:
+
+- Minimal landing page
+- Separate onboarding for both patients and researchers
+- A **personalized dashboard** for both patients and researchers
+- **Personalized** clinical trials, health experts, publications, and forums for patients
+- **Personalized** clinical trials, collaborators, and forums for researchers
+- A **Favorites section** to save and track interesting studies or experts
+
+---
+
+## ⚙️ **CuraLink Application Flow**
+
+### **1. 🖥️ Landing Page**
+
+- **Welcome Message**: A simple introductory message explaining CuraLink as a platform that connects **patients** and **researchers** to discover relevant clinical trials, publications, and health experts.
+- **Call to Action (CTA)**: Two options:
+    - **For Patients/Caregivers** (e.g., “I am a Patient or Caregiver”)
+    - **For Researchers** (e.g., “I am a Researcher”)
+
+→ Keep it as minimal as possible with a very neat and clear UI/UX. It should be easy to understand — take examples from [duolingo.com](https://duolingo.com/).
+
+---
+
+### **2. 👩‍⚕️ For Patients/Caregivers Flow**
+
+### **Step 1: Profile Setup (Patient)**
+
+- **Natural Language Input**:
+    - Ask the patient to enter details about themselves (e.g., symptoms, medical conditions).
+    - **Example**: “I have Brain Cancer.”
+    - **Note**: The platform begins populating **relevant publications**, **experts**, and **clinical trials** based on the condition provided.
+    - Patients enter personal and medical (disease of interest) information to build a tailored profile. Keep it broad and general (dropdown or free text).
+    - The input can be in natural language so AI can automatically identify the conditions.
+    - **Condition Filters**: Add more conditions like *Glioma* or *Lung Cancer* to further personalize results.
+    - **Location Filters**:
+        - Enter location details (city, country).
+        - **Note**: While the platform shows experts globally, filtering by **proximity** helps narrow results.
+        - Users can toggle filters to view **all experts**, regardless of location.
+
+### **Step 2: Dashboard**
+
+- **Personalized Dashboard**:
+    - Automatically populate **recommended publications**, **health experts**, and **clinical trials** based on the patient’s condition and interests.
+    - **Feature**: Display the latest **clinical trials**, **publications**, and **experts**.
+
+### **Step 3: Health Experts**
+
+- Patients can search and view recommended **health experts** based on their conditions or diseases (e.g., “Glioma”).
+- If a researcher has a detailed profile, the platform pulls **specialties** and **research interests** from it.
+- **Generic Search**: If a researcher isn’t part of the platform, it will pull data from publications and external sources (this part needs further research to make it functional).
+- **Follow/Request Meeting**: Patients can **follow** experts or **request a meeting**.
+    - Meeting requests can only be made if the researcher is active on the platform. Otherwise, a manual request goes to the admin.
+    - Patients must provide basic details (name, contact) for meeting requests.
+    - Option to nudge experts to join.
+
+### **Step 4: Clinical Trials Search**
+
+- **Search Clinical Trials**: Patients can **type keywords** (e.g., “Lung Cancer Immunotherapy Trials”), and it should suggest **recommended trials** based on their interests.
+- **Filters**: Trials can be filtered by **recruitment phase** (recruiting, completed) and **location**.
+- Example: [ClinicalTrials.gov Study](https://clinicaltrials.gov/study/NCT06562582?cond=heart%20attack&aggFilters=status:not%20rec&rank=1).
+- Ideally, a clickable email option should open a compose box to contact trial administrators.
+- **AI-generated summaries** are an important feature to simplify clinical trial or publication content.
+
+### **Step 5: Publications**
+
+- **Recommended Publications**: Display a list of relevant publications.
+- **Link to Full Papers**: Direct users to the publication’s website for full access.
+- When searching by keywords, specific research papers should appear.
+
+### **Step 6: Forums**
+
+- **Forum Categories**: Spaces for discussions (e.g., *Cancer Research*, *Clinical Trials Insights*).
+- Patients can post questions in a Reddit-style format. Only researchers can reply; patients cannot respond to each other.
+- Patients cannot create new communities — build this feature smartly.
+
+### **Step 7: Favorites**
+
+- **Save Favorites**: Patients can save their favorite **publications**, **clinical trials**, and **experts**.
+- **My Favorites** will be a dedicated dashboard section.
+
+---
+
+### **3. 🧑‍🔬 For Researchers Flow**
+
+### **Step 1: Profile Setup (Researcher)**
+
+**Personal and Professional Information**
+
+Provide background and expertise to connect with relevant opportunities and collaborators.
+
+- **Specialties**: Mention areas like *Oncology*, *Neurology*, or *Immunology* to categorize your profile.
+- **Research Interests**: Add areas like *Immunotherapy*, *Clinical AI*, or *Gene Therapy* to receive relevant recommendations.
+- Optional links for auto-importing publications:
+    - **ORCID**: Auto-import credentials and publications.
+    - **ResearchGate**: Pull academic contributions and connect with other researchers.
+- Keep these optional; if added, they’ll fetch publications automatically.
+- Ensure AI-generated summaries of fetched content are simple and clear.
+- Include an option for researchers to indicate availability for meetings.
+- Display their publications with AI-generated summaries.
+
+### **Step 2: Researcher Dashboard**
+
+- **Personalized Dashboard**:
+    - View **clinical trials**, **potential collaborators**, and manage **forums** by replying to patient questions.
+
+### **Step 3: Collaborators**
+
+- **Search for Collaborators**:
+    - View or search global collaborators by **specialty** or **keywords**.
+    - Profiles show **research interests** and **recent publications**.
+- Researchers can send **connection requests** and **chat** once accepted.
+
+### **Step 4: Manage Clinical Trials**
+
+- **Add Clinical Trials**: Add new trials with details like **eligibility**, **phase**, **status**, and **description**.
+- **Manage Existing Trials**: Update recruitment progress and participant numbers.
+- **AI-generated Summary**: Set up parameters summarizing research topics and key findings briefly.
+
+### **Step 5: Forums**
+
+- **Engage in Discussions**: Researchers can create communities and lead discussions.
+- **Ask/Answer Questions**: Researchers can ask or respond to relevant forum topics.
+
+### **Step 6: Favorites**
+
+- **Save Favorites**: Researchers can save relevant **clinical trials**, **publications**, and **collaborators** for future reference.
+
+---
+
+### 📌 **Additional Notes**
+
+- **Terminology**: For patients, use **“Health Experts”**; for researchers, use **“Collaborators”** — this keeps flows distinct.
+- **Profile Visibility**: If a researcher isn’t registered, public data (from **PubMed** or **ResearchGate**) will be used. Missing contact info is flagged for admin review.
+- **Meeting Requests**: Work only when both parties are on the platform; otherwise, requests go to the admin.
+
+---
+
+### 🧰 **Tech Stack**
+
+- **Frontend**: React or Next.js with responsive design for different screen sizes
+- **Backend**: FastAPI (Python) or Node.js
+- **Database**: PostgreSQL must be scalable, reliable, and well-structured
+- **APIs**: Use PubMed, Google Scholar, ClinicalTrials.gov, ORCID, and ResearchGate for data fetching
+- Include journals such as NEJM, JAMA, Nature Medicine, Science, Cell, The Lancet, Journal of Clinical Oncology, BMJ, Annals of Internal Medicine
+- Reference: [Research.com Medicine Journals Ranking](https://research.com/journals-rankings/medicine)
+
+---
+
+## 📝 **Points to Note**
+
+1. **UI/UX**: Clean, intuitive, and user-friendly design. Keep the flow smooth and simple.
+2. **Code Quality**: Follow best practices and maintain well-structured code.
+3. **Deployment**: Submit the deployment link and demo video.
+4. **Code Submission**: You are N**ot Required to submit your code**. Winners will continue development as part of the founding team under expert guidance. This challenge focuses on Skills, **AI leverage and creativity**.
+5. **Use of AI Tools**: Set up Cursor or similar tools to improve productivity and speed act smartly.
+6. **Discipline**: We are strict about **discipline** and behavior, so make sure to consider this. Those who stay committed, consistent, and respectful until the end will receive a certificate in recognition of their efforts.
